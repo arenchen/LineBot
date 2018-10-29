@@ -1,6 +1,6 @@
 ﻿using System.IO;
-using LineBot.Models;
 using Microsoft.EntityFrameworkCore;
+using LineBot.Models;
 
 namespace LineBot
 {
@@ -12,7 +12,7 @@ namespace LineBot
             {
                 Database.EnsureDeleted();
                 Database.EnsureCreated();
-            }            
+            }
         }
 
         public DbSet<KeyDictionary> KeyDictionaries { get; set; }
